@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1513611539 source:c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\alberi n ari\main.cpp
+	"TreeList.h"
+
+1513682089 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\alberi n ari\treelist.h
+	"list_vector.h"
+	"Tree.h"
+
+1513611539 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\alberi n ari\list_vector.h
+	"linear_list.h"
+
+1513611539 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\alberi n ari\linear_list.h
+	<iostream>
+
+1513611539 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\alberi n ari\tree.h
+
+1515260619 source:c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\alberi n ari-prof\main.cpp
+	"TreeList.h"
+
+1515260512 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\alberi n ari-prof\treelist.h
+	"list_vector.h"
+	"Tree.h"
+
+1515259812 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\alberi n ari-prof\list_vector.h
+	"linear_list.h"
+
+1513611539 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\alberi n ari-prof\linear_list.h
+	<iostream>
+
+1513611539 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\alberi n ari-prof\tree.h
+
+1515927620 source:c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\albero n-ario\alberi n ari-prof\main.cpp
+	"TreeList.h"
+
+1515927745 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\albero n-ario\alberi n ari-prof\treelist.h
+	"list_vector.h"
+	"Tree.h"
+
+1515259814 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\albero n-ario\alberi n ari-prof\list_vector.h
+	"linear_list.h"
+
+1513611540 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\albero n-ario\alberi n ari-prof\linear_list.h
+	<iostream>
+
+1513611540 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\albero n-ario\alberi n ari-prof\tree.h
+

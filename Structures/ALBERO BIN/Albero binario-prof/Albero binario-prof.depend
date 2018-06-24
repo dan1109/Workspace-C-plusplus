@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1515329370 source:c:\users\daniele\desktop\workspace-daniele bufalo\albero binario-prof\main.cpp
+	"Bin_treec.h"
+	<iostream>
+
+1515329395 c:\users\daniele\desktop\workspace-daniele bufalo\albero binario-prof\bin_treec.h
+	"Bin_tree.h"
+	"exceptions.h"
+
+1515329369 c:\users\daniele\desktop\workspace-daniele bufalo\albero binario-prof\bin_tree.h
+	<iostream>
+
+1515329370 c:\users\daniele\desktop\workspace-daniele bufalo\albero binario-prof\exceptions.h
+	<stdexcept>
+
+1515706709 source:c:\users\daniele\desktop\albero binario-prof\main.cpp
+	"Bin_treec.h"
+	<iostream>
+
+1515706787 c:\users\daniele\desktop\albero binario-prof\bin_treec.h
+	"Bin_tree.h"
+	"exceptions.h"
+	<array>
+
+1515704675 c:\users\daniele\desktop\albero binario-prof\bin_tree.h
+	<iostream>
+
+1515329372 c:\users\daniele\desktop\albero binario-prof\exceptions.h
+	<stdexcept>
+

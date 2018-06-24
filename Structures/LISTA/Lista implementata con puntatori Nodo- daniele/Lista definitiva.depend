@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1511740341 source:c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\lista definitiva\main.cpp
+	"Nodo.h"
+	"Lista.h"
+
+1511741175 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\lista definitiva\nodo.h
+	<cstdlib>
+	<iostream>
+	"stdlib.h"
+
+1511741223 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\lista definitiva\lista.h
+	"Nodo.h"
+
+1512255703 source:c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\lista implementata con puntatori nodo- daniele\main.cpp
+	"Nodo.h"
+	"Lista.h"
+
+1511741175 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\lista implementata con puntatori nodo- daniele\nodo.h
+	<cstdlib>
+	<iostream>
+	"stdlib.h"
+
+1514895623 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\lista implementata con puntatori nodo- daniele\lista.h
+	"Nodo.h"
+

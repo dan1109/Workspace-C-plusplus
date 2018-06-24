@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1513526153 source:c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\coda con priorità\main.cpp
+	"Coda Priorità.h"
+
+1513525940 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\coda con priorità\coda priorità.h
+	<iostream>
+	"assert.h"
+

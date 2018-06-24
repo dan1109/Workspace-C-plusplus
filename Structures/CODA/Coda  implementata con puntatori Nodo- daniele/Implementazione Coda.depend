@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1514896665 source:c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\coda  implementata con puntatori nodo- daniele\main.cpp
+	"Nodo.h"
+	"Coda.h"
+
+1511797117 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\coda  implementata con puntatori nodo- daniele\nodo.h
+	<cstdlib>
+	<iostream>
+	"stdlib.h"
+
+1514896655 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\coda  implementata con puntatori nodo- daniele\coda.h
+	"Nodo.h"
+

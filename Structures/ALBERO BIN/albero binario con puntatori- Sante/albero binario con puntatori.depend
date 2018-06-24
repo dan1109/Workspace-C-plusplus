@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1513595350 source:c:\users\sante.desktop-djcogc4\desktop\lab 6\esercizio 2\albero binario con puntatori\main.cpp
+	<iostream>
+	<stdlib.h>
+	"alberobinario.h"
+	"cella.h"
+
+1513593266 c:\users\sante.desktop-djcogc4\desktop\lab 6\esercizio 2\albero binario con puntatori\alberobinario.h
+	<iostream>
+	"cella.h"
+
+1513595395 c:\users\sante.desktop-djcogc4\desktop\lab 6\esercizio 2\albero binario con puntatori\cella.h
+

@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1513360616 source:c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\albero binario- implementazione v.2.0\main.cpp
+	"Albero Binario.h"
+
+1513360662 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\albero binario- implementazione v.2.0\albero binario.h
+	<iostream>
+	<stdlib.h>
+
+1513441531 source:c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\albero binario\main.cpp
+	"Albero Binario.h"
+
+1513441695 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\albero binario\albero binario.h
+	<iostream>
+	<stdlib.h>
+

@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1515344313 source:c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\albero binario - versione n ario\main.cpp
+	"TreeList.h"
+
+1515343524 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\albero binario - versione n ario\treelist.h
+	"list_vector.h"
+	"Tree.h"
+
+1515344349 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\albero binario - versione n ario\list_vector.h
+	"linear_list.h"
+
+1513611539 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\albero binario - versione n ario\linear_list.h
+	<iostream>
+
+1513611539 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\albero binario - versione n ario\tree.h
+
+1515500249 source:c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\albero bin\albero binario - versione n ario\main.cpp
+	"TreeList.h"
+
+1515500499 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\albero bin\albero binario - versione n ario\treelist.h
+	"list_vector.h"
+	"Tree.h"
+
+1515344350 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\albero bin\albero binario - versione n ario\list_vector.h
+	"linear_list.h"
+
+1513611540 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\albero bin\albero binario - versione n ario\linear_list.h
+	<iostream>
+
+1515500423 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\albero bin\albero binario - versione n ario\tree.h
+

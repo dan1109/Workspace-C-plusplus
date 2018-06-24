@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1513547620 source:c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\grafo\main.cpp
+	"GrafoMat.h"
+	<string>
+
+1513547466 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\grafo\grafomat.h
+	"Grafo.h"
+
+1513547466 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\grafo\grafo.h
+	"list_vector.h"
+
+1513547466 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\grafo\list_vector.h
+	"linear_list.h"
+
+1513547466 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\grafo\linear_list.h
+	<iostream>
+

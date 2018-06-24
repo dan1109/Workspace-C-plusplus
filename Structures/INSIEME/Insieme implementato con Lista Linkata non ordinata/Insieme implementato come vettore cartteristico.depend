@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1512399380 source:c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\insieme implementato come vettore cartteristico\main.cpp
+	"Insieme_vettore_bool.h"
+	"Lista.h"
+
+1512399380 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\insieme implementato come vettore cartteristico\insieme_vettore_bool.h
+	"Lista.h"
+
+1512397621 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\insieme implementato come vettore cartteristico\lista.h
+	"Nodo.h"
+
+1512320881 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\insieme implementato come vettore cartteristico\nodo.h
+	<cstdlib>
+	<iostream>
+	"stdlib.h"
+
+1514896056 source:c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\insieme implementato con lista linkata non ordinata\main.cpp
+	"Insieme_vettore_bool.h"
+	"Lista.h"
+
+1512400579 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\insieme implementato con lista linkata non ordinata\insieme_vettore_bool.h
+	"Lista.h"
+
+1514895993 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\insieme implementato con lista linkata non ordinata\lista.h
+	"Nodo.h"
+
+1512320881 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\insieme implementato con lista linkata non ordinata\nodo.h
+	<cstdlib>
+	<iostream>
+	"stdlib.h"
+

@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1514896198 source:c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\dizionario hash table\main.cpp
+	"Dizionario.h"
+
+1512589984 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\dizionario hash table\hash table.h
+	"Dizionario.h"
+	<string>
+
+1514896217 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\dizionario hash table\dizionario.h
+	"Lista.h"
+
+1512917573 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\dizionario hash table\dizionario hash table.h
+	"Lista.h"
+	"Nodo.h"
+	"insieme.h"
+	<string>
+
+1513010496 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\dizionario hash table\lista.h
+	"Nodo.h"
+
+1513006295 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\dizionario hash table\nodo.h
+	<cstdlib>
+	<iostream>
+	"stdlib.h"
+
+1512400579 c:\users\daniele\desktop\workspace-daniele bufalo\strutture dati asd\dizionario hash table\insieme.h
+	"Lista.h"
+

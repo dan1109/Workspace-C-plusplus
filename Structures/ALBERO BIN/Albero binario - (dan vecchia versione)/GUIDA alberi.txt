@@ -1,0 +1,311 @@
+/*
+
+  Nome progetto: Alberi binari
+  Autore: Alessio Luffarelli
+  Web: www.alessioluffarelli.it
+  Data: Dicembre 2001
+
+*/
+
+//Progetto Realizzato da questo file. L'ho copiato e adattato ad un template Nodo e AlberoBinario
+
+#include <iostream>
+#include <stdlib.h>
+
+using namespace std;
+
+struct nodo {
+	int DATO; //albero di valori interi
+	struct nodo *DX; //puntatore al sottoalbero destro
+	struct nodo *SX; //puntatore al sottoalbero sinistro
+	}NODO;
+
+typedef struct nodo* tree; //dichiaro un nuovo tipo di dato: l'albero
+
+bool Is_Empty(tree RADICE)
+//restituisce TRUE se l'albero è vuoto. altrimenti restituisce FALSE
+{
+	return(RADICE==NULL); //NB: questo è un confronto (==) non un'assegnazione
+}
+
+
+tree Albero_Vuoto(void)
+//costruisce un albero vuoto
+{
+	return(NULL);
+}
+
+
+int Valore_Etichetta(tree RADICE)
+//restituisce il valore (o etichetta) del nodo
+{
+	if (Is_Empty(RADICE)) abort();
+	else return(RADICE->DATO);
+}
+
+tree Sinistro(tree RADICE)
+//restituisce il puntatore al sottoalbero sinistro
+{ 
+	if (Is_Empty(RADICE)) return(NULL);
+	else return(RADICE->SX);
+}
+
+tree Destro(tree RADICE)
+//restituisce il puntatore al sottoalbero destro
+{ 
+	if (Is_Empty(RADICE)) return(NULL);
+	else return(RADICE->DX);
+}
+
+tree Costruisci_Albero(int ETICHETTA,tree S,tree D)
+//costrisce un albero binario non ordinato
+{
+	tree RADICE;
+	RADICE = (nodo *) malloc(sizeof(NODO)); //chiede l'indirizzo di una nuova cella di memoria
+	RADICE->DATO = ETICHETTA;
+	RADICE->SX = S;
+	RADICE->DX = D;
+	return (RADICE);
+}
+
+void Inorder(tree RADICE)
+//stampa inorder dell'albero
+{
+	if (!(Is_Empty(RADICE))) {
+		Inorder(Sinistro(RADICE));
+		cout<<Valore_Etichetta(RADICE)<<"  ";
+		Inorder(Destro(RADICE));
+		}
+}
+
+
+void Preorder(tree RADICE)
+//stampa preorder dell'albero
+{
+	if (!(Is_Empty(RADICE))) {
+		cout<<Valore_Etichetta(RADICE)<<"  ";
+		Preorder(Sinistro(RADICE));
+		Preorder(Destro(RADICE));
+		}
+}
+
+
+void Postorder(tree RADICE)
+//stampa postorder dell'albero
+{
+	if (!(Is_Empty(RADICE))) {
+		Postorder(Sinistro(RADICE));
+		Postorder(Destro(RADICE));
+		cout<<Valore_Etichetta(RADICE)<<"  ";
+		}
+}
+
+
+int ContaNodi(tree RADICE)
+//restituisce il numero dei nodi dell'albero
+{
+	if(Is_Empty(RADICE)) return(0);
+	else return(1 + ContaNodi(Sinistro(RADICE)) + ContaNodi(Destro(RADICE)));
+}
+
+int ContaFoglie(tree RADICE)
+//restituisce il numero delle foglie dell'albero
+{
+	if(Is_Empty(RADICE)) 
+		return(0);
+	else {
+		if ((Sinistro(RADICE)==NULL) && (Destro(RADICE)==NULL))
+			return(1);
+		else return( ContaFoglie(Sinistro(RADICE)) + ContaFoglie(Destro(RADICE)) );
+	}
+}
+
+bool Perf_Bil(tree RADICE)
+//Restituisce TRUE se l'albero è perfettamente bilanciato
+{
+	if (Is_Empty(RADICE)) return(true);	//Oppure ERROR, secondo la definizione
+	else {
+		if ((Sinistro(RADICE)==NULL) && (Destro(RADICE)==NULL))	//Praticamente: se il nodo è una foglia..
+			return(true);
+		else {
+			if ((Sinistro(RADICE)!=NULL) && (Destro(RADICE)!=NULL))	//Se il nodo ha tutti e due i figli..
+				return( Perf_Bil(Sinistro(RADICE)) && Perf_Bil(Destro(RADICE)) );
+			else return(false);
+		}
+	}
+}
+
+
+bool Ricerca(tree RADICE,int X)
+//ricerca il valore X nell'albero puntato da RADICE
+{
+	if (Is_Empty(RADICE))
+		return(false);
+	else {
+		if (X==Valore_Etichetta(RADICE))
+			return(true);
+		else
+			return(Ricerca(Sinistro(RADICE),X) || Ricerca(Destro(RADICE),X));
+	}
+}
+
+
+int Altezza_Nodo(tree N)	//Restituisce l'altezza di un nodo (vedere definizione di altezza)
+{
+  int ALTD=0,ALTS=0;
+	if (Is_Empty(N)) return(-1);
+	else {
+		ALTS=Altezza_Nodo(Sinistro(N));
+		ALTD=Altezza_Nodo(Destro(N));
+		if (ALTS>ALTD) return(ALTS+1);
+		else return(ALTD+1);
+	}
+}
+
+tree Ins_Ord(int E,tree RADICE)
+//Costruisce un albero binario di ricerca (un albero "ordinato")
+{
+	if (Is_Empty(RADICE)) {
+		RADICE=(tree)malloc(sizeof(NODO)); //chiede l'indirizzo di una cella di memoria libera
+		RADICE->DATO=E;
+		RADICE->SX=NULL;
+		RADICE->DX=NULL;
+		return RADICE;
+	}
+	else {
+		if(E<Valore_Etichetta(RADICE)) {
+			RADICE->SX=Ins_Ord(E,Sinistro(RADICE));
+			return RADICE;
+		}
+		else {
+			RADICE->DX=Ins_Ord(E,Destro(RADICE));
+			return RADICE;
+		}
+	}
+}
+
+
+bool RicercaBinaria(int X,tree RADICE)
+//Ricerca dicotomica (o binaria) per alberi binari di ricerca (ordinati)
+{
+	if (Is_Empty(RADICE)) return(false);
+	else {
+		if (X==Valore_Etichetta(RADICE)) return(true);
+		else {
+			if (X < Valore_Etichetta(RADICE))
+				return( RicercaBinaria(X,Sinistro(RADICE)) );
+			else 
+				return( RicercaBinaria(X,Destro(RADICE)) );
+		}
+	}
+}
+
+
+// -----------------------------------------------
+// Inizio del Main
+//
+// Il programma che segue mostra come applicare le
+// funzioni di cui sopra
+
+int main(int argc, char *argv[])
+{
+    
+	tree t1,t2;
+    tree t3,t4;
+	int X;
+	
+	t1=Costruisci_Albero(2,Albero_Vuoto(),Albero_Vuoto());
+	t2=Costruisci_Albero(1,Albero_Vuoto(),Albero_Vuoto());
+	t3=Costruisci_Albero(7,t1,t2);
+
+	t1=Costruisci_Albero(4,Albero_Vuoto(),Albero_Vuoto());
+	t2=Costruisci_Albero(9,Albero_Vuoto(),Albero_Vuoto());
+	t4=Costruisci_Albero(3,t1,t2);
+
+	t1=Costruisci_Albero(5,t3,t4);
+    /*
+    In t1 c'è ora l'albero (o meglio, il puntatore all'albero)
+    rappresentato qui sotto:
+
+
+						5(t1)
+					/		\
+
+				7				3
+
+				/\				/\
+
+			2		1		4		9(t2)
+	*/
+
+
+	cout<<"\nStampa in Inorder:\n";
+	Inorder(t1);
+
+	cout<<"\n\nStampa in Preorder:\n";
+	Preorder(t1);
+
+	cout<<"\n\nStampa in Postorder:\n";
+	Postorder(t1);
+
+	cout<<"\n\nLa radice dell 'albero è : "<<Valore_Etichetta(t1);
+
+	cout<<"\n\nIl numero totale dei nodi dell'albero è : "<<ContaNodi(t1);
+
+	cout<<"\n\nIl numero totale delle foglie dell'albero è : "<<ContaFoglie(t1);
+
+	cout<<"\n\nQuesto albero ha altezza "<<Altezza_Nodo(t1)<<" ("<<Altezza_Nodo(t1)+1<<" livelli)";
+
+	if (Perf_Bil(t1)) cout<<"\n\nQuesto albero è perfettamente bilanciato.";
+	else cout<<"\n\nQuesto albero non è perfettamente bilanciato.";
+
+	cout<<"\n\nInserire un valore da cercare nell'albero : ";
+	cin>>X;
+	if (Ricerca(t1,X)) cout<<"\n\tValore trovato!!";
+	else cout<<"\n\tValore non trovato!!";
+ 
+
+	t1=Albero_Vuoto();
+ 
+	cout<<"\n\n\n*******************************************************************";
+	cout<<"\n*********** COSTRUZIONE DI UN ALBERO BINARIO DI RICERCA ***********";
+	cout<<"\n*******************************************************************";
+	cout<<"\n\n\nInserire tutti gli elementi (per terminare inserire 0)\n";
+	
+    do {
+		cout<<"\tElemento : ";
+		cin>>X;
+		t1=Ins_Ord(X,t1);
+	} while (X!=0);
+
+	cout<<"\nStampa in Inorder:\n";
+	Inorder(t1);
+
+	cout<<"\n\nStampa in Preorder:\n";
+	Preorder(t1);
+
+	cout<<"\n\nStampa in Postorder:\n";
+	Postorder(t1);
+
+	cout<<"\n\nLa radice è : "<<Valore_Etichetta(t1);
+
+	cout<<"\n\nIl numero totale dei nodi dell'albero è : "<<ContaNodi(t1);
+
+	cout<<"\n\nIl numero totale delle foglie dell'albero è : "<<ContaFoglie(t1);
+
+	cout<<"\n\nQuesto albero ha altezza "<<Altezza_Nodo(t1)<<" ("<<Altezza_Nodo(t1)+1<<" livelli)";
+
+	if (Perf_Bil(t1)) cout<<"\n\nQuesto albero è perfettamente bilanciato.";
+	else cout<<"\n\nQuesto albero NON è perfettamente bilanciato.";
+
+	cout<<"\n\nInserire un elemento da cercare con la ricerca dicotomica : ";
+	cin>>X;
+
+	if (RicercaBinaria(X,t1)) cout<<"\n\tValore trovato!!";
+	else cout<<"\n\tValore non trovato!!";
+
+	cout<<"\n\n\n\n\n";
+  
+  system("PAUSE");	
+  return 0;
+}
