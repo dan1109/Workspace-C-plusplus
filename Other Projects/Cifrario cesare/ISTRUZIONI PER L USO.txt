@@ -1,0 +1,25 @@
+CIAO DANIEL BUFL!VEDI ?HO PRODOTTO UN ALTRO PROGRAMMINO CHE SE VUOI PER IMPARARE MEGLIO 
+L INFORMATICA NELL AMBITO DELLA CRITTOGRAFIA E MESSAGGI SEGRETI PUOI PROVARLO A MIGLIORARE.
+
+Si tratta del codice di cesare che sfruttando le definizioni in stile semeraro sarebbe....
+
+dato un alfabeto1(in cui conta l ordine delle lettere cioe abbiamo una relazione d ordine totale) e la sua lunghezza
+dato uno spiazzamento(valore intero) e data una stringa1 sull'alfabeto1
+
+possiamo ottenere a partire dall alfabeto1, 
+un alfabeto2 della stessa lunghezza dell alfabeto1
+facendo corrispondere alla lettera i-esima dell alfabeto2 la lettera i-esima dell alfabeto1
+piu lo spiazzamento
+
+ottenuto l alfabeto2
+quindi possiamo ottenere una parola sull alfabeto2 
+facendo corrispondere la posizione delle lettere nell alfabeto1 alla posizione delle lettere nell alfabeto2
+
+ed ovviamente a partire da una parola sull alfabeto2 possiamo retrocedere alla parola originale sull alfabeto1
+
+DANIEL BUFL!
+ho creato la parte di codifica(da parola originale a parola criptata)
+però non ho scritto in modo ottimizzato perché bisogna studiare le altre cose di asd e manca
+la funzione per tornare indietro(da criptata a originale)
+
+gli input li prende dai file

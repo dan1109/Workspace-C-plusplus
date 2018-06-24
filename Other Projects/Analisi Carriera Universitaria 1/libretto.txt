@@ -1,0 +1,8 @@
+Programmazione 	26 12
+Architettura	23 9
+Lab.Info	18 6
+Analisi		19 9
+Linguaggi	25 9
+Mat_Discreta    20 9
+
+	

@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1511725009 source:c:\users\andre\documents\università\programmi c\programmi c windows\analisi carriera universitaria\main.cpp
+	<iostream>
+	"analisi_carriera_universitaria.h"
+	<fstream>
+	<string>
+	<iomanip>
+
+1511725163 c:\users\andre\documents\università\programmi c\programmi c windows\analisi carriera universitaria\analisi_carriera_universitaria.h
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+
+1511693476 source:c:\users\daniele\desktop\workspace-daniele bufalo\analisi carriera universitaria 1\main.cpp
+	<iostream>
+	"analisi_carriera_universitaria.h"
+	<fstream>
+	<string>
+	<iomanip>
+
+1511736852 c:\users\daniele\desktop\workspace-daniele bufalo\analisi carriera universitaria 1\analisi_carriera_universitaria.h
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+

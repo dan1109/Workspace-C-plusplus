@@ -1,0 +1,10 @@
+Qui è contenuto il codice sorgente del programma
+
+Per maggiori info sulla realizzazione, musicista, aprilo con il blocco note se vedi come ho fatto la scala anglosassone e il tempo.
+
+Ho usato Hz e i millisecondi nella realizzazione e i tempi di pausa tra due note.
+
+Il file eseguibile.exe si trova in bin>debug.
+
+Enjoy
+dan1109

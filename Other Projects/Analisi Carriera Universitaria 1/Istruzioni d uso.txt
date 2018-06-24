@@ -1,0 +1,7 @@
+DANIEL BUFL
+Basta aprire il progetto ed eseguire
+per avere un analisi della tua situazione
+apri il file libretto e modifica i voti
+aggiungendo/rimuovendo materie che hai sostenuto per variare ogni volta il risultato
+
+Successivamente lo integrero con altre funzioni piu avanzate
